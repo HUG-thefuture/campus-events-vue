@@ -1,0 +1,31 @@
+{
+  "name": "campus-events",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "校园活动运营管理前端：活动、报名、签到、场地、看板",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.7",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.8.4",
+    "pinia": "^2.2.4",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "sass": "^1.80.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9",
+    "vite-plugin-mock": "^3.0.2",
+    "vue-tsc": "^2.1.6"
+  }
+}

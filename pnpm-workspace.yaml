@@ -1,0 +1,14 @@
+packages:
+  - 'campus-events'
+  - 'admin-components'
+
+# pnpm 11 的依赖构建脚本审批（v11 起取代 onlyBuiltDependencies）。
+# 2026-09 审计修正：原文件的值是 pnpm 自动回写的待填占位文本"set this to true or
+# false"——未填写时 pnpm install 以 ERR_PNPM_IGNORED_BUILDS 退出码 1 失败，
+# pnpm run 的 deps-check 门禁随之失效。现按包用途填 true：
+#   esbuild：postinstall 优化平台二进制；vue-demi：切换 Vue2/3 API；
+#   @parcel/watcher：可选原生文件监听加速。
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  vue-demi: true

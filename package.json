@@ -1,0 +1,19 @@
+{
+  "name": "campus-ops-frontend-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "应届生简历项目：校园活动运营管理前端 + 可复用后台组件库（Monorepo）",
+  "workspaces": [
+    "campus-events",
+    "admin-components"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter campus-events dev",
+    "build": "pnpm --filter campus-events build",
+    "preview": "pnpm --filter campus-events preview"
+  },
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
